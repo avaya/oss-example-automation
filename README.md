@@ -2,6 +2,18 @@
 
 The OSS Automation Server is an example of a server that handles Automation callbacks from Avaya OSS.  This example has been written as a Spring Boot application.  The example just logs any messages it receives.  It can be used as a basis for actual automation.
 
+### Build
+
+The pom.xml file at the root is a Maven “Project Object Model” file, which handles all the dependencies and build details.  You’ll need to install Maven (and Java of course), then run:
+```
+mvn install
+```
+
+And then the .jar should be at:
+```
+target/sub-mgmt-server-<version>.jar
+```
+
 ### Runtime Usage
 
 The runtime of the example server consists of a single jar file and optionally an application.properties file in the same directory if you wish to override any of the server's defaults.  To start the server, simply run the following command in the directory containing the jar file using a console window:
